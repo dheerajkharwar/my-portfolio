@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dheeraj Kharwar - Full Stack Developer</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Hero Section -->
@@ -20,7 +22,7 @@
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>Hi, I'm Dheeraj Kharwar, a passionate Full Stack Developer with expertise in PHP, Java, and JavaScript. I specialize in building modern web applications and have a strong foundation in frontend and backend technologies.</p>
+      <p>Hi, I'm Dheeraj Kharwar, a passionate Full Stack Developer with expertise in PHP, Java, and JavaScript. I specialize in building modern web applications and have a strong foundation in frontend and backend technologies. I hold a B.Tech in Computer Science (2019) and have worked with frameworks like CodeIgniter, Spring Boot, and libraries like jQuery and Bootstrap.</p>
     </div>
   </section>
 
@@ -28,15 +30,17 @@
   <section id="skills">
     <div class="container">
       <h2>Skills</h2>
-      <ul>
-        <li>PHP</li>
-        <li>Java</li>
-        <li>JavaScript</li>
-        <li>HTML/CSS</li>
-        <li>Bootstrap</li>
-        <li>CodeIgniter</li>
-        <li>Spring Boot</li>
-      </ul>
+      <div class="skills-grid">
+        <div class="skill">PHP</div>
+        <div class="skill">Java</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">HTML/CSS</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">CodeIgniter</div>
+        <div class="skill">Spring Boot</div>
+        <div class="skill">jQuery</div>
+        <div class="skill">MySQL</div>
+      </div>
     </div>
   </section>
 
@@ -44,12 +48,23 @@
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
-      <div class="project">
-        <h3>E-commerce Website</h3>
-        <p>Built using PHP, CodeIgniter, and MySQL.</p>
-        <a href="#" class="btn">View Project</a>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>E-commerce Website</h3>
+          <p>Built using PHP, CodeIgniter, and MySQL.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Online Blogging Platform</h3>
+          <p>Built using Java, Spring Boot, and JSP.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Portfolio Website</h3>
+          <p>Built using HTML, CSS, JavaScript, and Bootstrap.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
       </div>
-      <!-- Add more projects -->
     </div>
   </section>
 
@@ -61,9 +76,21 @@
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
         <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Dheeraj Kharwar. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
