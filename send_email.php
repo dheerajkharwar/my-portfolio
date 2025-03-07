@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars(trim($_POST["message"]));
 
     // Set the recipient email address
-    $to = "dheerajkharwar9@gmail.com";  // Your email address
+    $to = "dheerajkharwar102@gmail.com";  // Your email address
     $headers = "From: " . $email . "\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
@@ -22,9 +22,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     if (mail($to, $email_subject, $email_body, $headers)) {
-        echo "Message sent successfully!";
+        // Redirect to the same page with a success message
+        header("Location: " . $_SERVER['HTTP_REFERER'] . "?status=success");
+        exit();
     } else {
-        echo "There was a problem sending your message.";
+        // Redirect to the same page with an error message
+        header("Location: " . $_SERVER['HTTP_REFERER'] . "?status=error");
+        exit();
     }
 }
 ?>
