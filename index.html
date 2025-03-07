@@ -25,96 +25,60 @@
             display: inline-block;
             margin-top: 10px;
         }
-        .section-title {
-            font-size: 1.8rem;
-            color: #00aaff;
-            margin-bottom: 15px;
+        /* Modal customization */
+        .modal-content {
+            background-color: #1e1e1e;
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="container text-center py-5">
-        <h1>Dheeraj Kharwar</h1>
-        <p class="lead text-light">A dedicated software developer with a strong foundation in object-oriented programming, data structures, and software development principles. Currently working as a professional software developer with hands-on experience in backend and frontend technologies, including Java, PHP, and modern frameworks. Known for strong problem-solving skills and a commitment to staying updated with industry trends.</p>
+        <h1>My Portfolio</h1>
+        <p class="text-light">Hi, My name is Dheeraj Kharwar. I am a passionate Software Developer.</p>
+        
+        <!-- Contact Form Button -->
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</a>
 
-        <h2 class="mt-5 section-title">Contact Information</h2>
-        <p>Email: dheerajkharwar102@gmail.com</p>
-        <p>Phone: +91 9580857067</p>
-        <p>Location: Noida Sector-63, Uttar Pradesh</p>
-        <a href="mailto:dheerajkharwar102@gmail.com" class="btn btn-primary">Contact Me</a>
-
-        <h2 class="mt-5 section-title">Education</h2>
-        <ul class="list-group list-group-flush text-dark">
-            <li class="list-group-item"><strong>B.Tech in Computer Science & Engineering</strong> - AKTU (2015–2019) - 73%</li>
-            <li class="list-group-item"><strong>Intermediate (12th)</strong> - UP Board (2012–2014) - 79%</li>
-            <li class="list-group-item"><strong>High School (10th)</strong> - UP Board (2010–2012) - 83%</li>
-        </ul>
-
-        <h2 class="mt-5 section-title">Professional Experience</h2>
-        <div class="list-group">
-            <div class="list-group-item">
-                <h5>Software Developer - Service Ninjas</h5>
-                <p><strong>Duration:</strong> 3 months</p>
-                <p>Currently working as a software developer focusing on backend and frontend development using Java, PHP, Spring Boot, and React.js.</p>
-            </div>
-            <div class="list-group-item">
-                <h5>Software Developer - Tramt Technology</h5>
-                <p><strong>Duration:</strong> 6 months</p>
-                <p>Developed and maintained various internal systems using PHP and Java, ensuring smooth operational workflows for the company.</p>
-            </div>
-            <div class="list-group-item">
-                <h5>Software Developer - Mihu Systems</h5>
-                <p><strong>Duration:</strong> 6 months</p>
-                <p>Worked on building custom web solutions for clients, including CRM systems and e-commerce platforms, using PHP and JavaScript frameworks.</p>
-            </div>
-            <div class="list-group-item">
-                <h5>Intern - Daksha Infotech</h5>
-                <p><strong>Duration:</strong> 6 months</p>
-                <p>Gained hands-on experience in developing web applications and working with various databases and technologies.</p>
+        <!-- Modal Structure for Contact Form -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="send_email.php" method="POST" id="contact-form" class="form-group">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <h2 class="mt-5 section-title">Technical Skills</h2>
-        <ul class="list-group list-group-flush text-dark">
-            <li class="list-group-item"><strong>Programming Languages:</strong> Java, PHP</li>
-            <li class="list-group-item"><strong>Web Technologies:</strong> Spring Boot, Next.js, React.js, CodeIgniter 3, JSP & Servlet, HTML, CSS, JavaScript, jQuery, AJAX, Bootstrap, Tailwind CSS</li>
-            <li class="list-group-item"><strong>Tools & Technologies:</strong> Maven, Git, Jenkins, Apache Tomcat, MobaXterm, Eclipse, IntelliJ IDEA, VS Code</li>
-            <li class="list-group-item"><strong>Databases:</strong> MySQL, Oracle</li>
-            <li class="list-group-item"><strong>Others:</strong> REST API, Microservices</li>
-        </ul>
-
-        <h2 class="mt-5 section-title">Projects</h2>
-        <div class="project-card">
-            <h3>POS With Inventory Desktop Application</h3>
-            <p>This desktop application integrates point-of-sale (POS) capabilities with inventory management, providing an all-in-one solution for retail businesses. Built using Java and MySQL, this system enables seamless tracking of stock, sales, and customer data.</p>
-        </div>
-
-        <div class="project-card mt-3">
-            <h3>Stock Audit Mobile App</h3>
-            <p>Developed a mobile application to help businesses conduct stock audits efficiently. The app allows users to track inventory and generate reports, improving the overall audit process. Built for Android using Java.</p>
-        </div>
-
-        <div class="project-card mt-3">
-            <h3>Websites & Web Applications</h3>
-            <p>Developed several websites and web applications, including e-commerce platforms, company websites, CRM systems, and landing pages. Each project utilized a variety of web technologies, including Spring Boot, Next.js, React.js, and more.</p>
-        </div>
-
-        <h2 class="mt-5 section-title">Personal Details</h2>
-        <ul class="list-group list-group-flush text-dark">
-            <li class="list-group-item"><strong>Date of Birth:</strong> 12/05/1998</li>
-            <li class="list-group-item"><strong>Languages Known:</strong> Hindi, English</li>
-            <li class="list-group-item"><strong>Passport No.:</strong> X6328885 (Expiry – 2033)</li>
-        </ul>
+        <!-- Rest of your page content goes here -->
     </div>
 
     <footer class="text-center mt-5">
         <p>2025 © Dheeraj Kharwar | All Rights Reserved</p>
     </footer>
 
-    <script>
-        $(document).ready(function() {
-            // You can add any dynamic content or interactive features here if needed.
-        });
-    </script>
 </body>
 </html>
