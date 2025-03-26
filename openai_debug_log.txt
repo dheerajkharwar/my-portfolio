@@ -1,0 +1,37 @@
+2025-03-26 05:52:31 - {
+  "id": "chatcmpl-BFD2TtmbCA9G0E2tvvIcYX3qPhGtt",
+  "object": "chat.completion",
+  "created": 1742964741,
+  "model": "gpt-4-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "[\"advice for stock market investment\", \"advice on stock market\", \"advisor for stock market\", \"best advice for traders\", \"best advisor for stock market\", \"best advisory company for share market\", \"best market advisor\", \"best stock advice website\", \"best share market advisor\", \"best share market advisor india\", \"best share market consultants india\", \"best share market tips\", \"best stock advisory\", \"best stock advisory service\", \"best stock market advisor\", \"best stock market advisors\", \"best stock market tips\", \"best stock market tips provider\", \"best stock trading advice\", \"best trading advice\", \"expert advice for share market today\", \"expert advice on share market\", \"expert advice on stock\", \"financial advisor for stocks\", \"investment tips\", \"market tips\", \"option trading advice\", \"option trading advisor\", \"share advice\", \"share investment tips\", \"stock advice companies\", \"stock investing advice\", \"stock investment suggestions\", \"stock market advice\", \"stock market advisors\", \"stock market advisory\", \"stock market advisory services\", \"stock market best advisor\", \"stock market trading tips\", \"stock trading advice\", \"stock trading advisory services\", \"stocks advice\", \"stocktips\", \"trading advice\", \"what is the best stock trading advisory service\"]",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2487,
+    "completion_tokens": 263,
+    "total_tokens": 2750,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
+
